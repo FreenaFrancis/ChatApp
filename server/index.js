@@ -38,6 +38,9 @@ socketIO.on('connection', (socket) => {
 app.get("/api", (req, res) => {
   res.json({message: "Hello"})
 });
+app.get('/',(req,res)=>{
+  res.send('Server Running...');
+})
 
    
 http.listen(PORT, () => {
